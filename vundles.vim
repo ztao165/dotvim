@@ -10,3 +10,5 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 " line status themes
 Plugin 'vim-airline/vim-airline-themes'
+" markdown preview
+Plugin 'suan/vim-instant-markdown'
