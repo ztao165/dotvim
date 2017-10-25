@@ -12,3 +12,5 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " markdown preview
 Plugin 'suan/vim-instant-markdown'
+" delete buffer better
+Plugin 'moll/vim-bbye'

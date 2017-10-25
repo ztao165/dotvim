@@ -1,4 +1,9 @@
 nnoremap <F3> :exe 'NERDTreeToggle'<CR>
+"nnoremap <C-l> gt
+"nnoremap <C-h> gT
+nnoremap <C-l> :bn<CR>
+nnoremap <C-h> :bp<CR>
+nnoremap bd :Bdelete<CR>
 
 syntax on
 hi CursorLine cterm=NONE ctermbg=white ctermfg=darkred
