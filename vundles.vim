@@ -14,3 +14,5 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'suan/vim-instant-markdown'
 " delete buffer better
 Plugin 'moll/vim-bbye'
+" git wrapper
+Plugin 'tpope/vim-fugitive'
