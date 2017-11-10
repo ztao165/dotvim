@@ -16,3 +16,5 @@ Plugin 'suan/vim-instant-markdown'
 Plugin 'moll/vim-bbye'
 " git wrapper
 Plugin 'tpope/vim-fugitive'
+" taglist
+Plugin 'vim-scripts/taglist.vim'
