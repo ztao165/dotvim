@@ -18,3 +18,5 @@ Plugin 'moll/vim-bbye'
 Plugin 'tpope/vim-fugitive'
 " taglist
 Plugin 'vim-scripts/taglist.vim'
+" syntastic
+Plugin 'vim-syntastic/syntastic'
