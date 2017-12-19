@@ -16,9 +16,13 @@
 #### ctags
 Ctags是Linux/Unix下生成标签的命令，它可以对项目源代码中的类、函数、方法、变量、宏等元素进行索引处理，并生成索引文件，而Vim中的一些插件需要使用到这些索引文件进行跳转，例如taglist。
 ## Shortcuts
+
 `F3` 打开NERDTree
+
 `F4` 打开Taglist
+
 `F5` 打开Tagbar
+
 ## Screenshots
 ![](https://ws1.sinaimg.cn/large/006tNc79ly1flg8izl0yqj31kw0w04a8.jpg)
 
