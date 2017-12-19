@@ -60,6 +60,7 @@ let g:airline#extensions#whitespace#symbol = '!'
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags'  "设置ctags命令的位置
     nnoremap <F4> :Tlist<CR>                    "设置关闭和打开taglist窗口的快捷键
 "}
+let tagbar_ctags_bin = '/usr/local/bin/ctags'
 
 "syntastic{
     set statusline+=%#warningmsg#
