@@ -26,7 +26,7 @@ nnoremap <F3> :exe 'NERDTreeToggle'<CR>
 "nnoremap <C-h> gT
 nnoremap <C-l> :bn<CR>
 nnoremap <C-h> :bp<CR>
-nnoremap bd :Bdelete<CR>
+"nnoremap bd :bd<CR>
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
