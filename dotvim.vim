@@ -28,7 +28,7 @@ nnoremap <C-l> :bn<CR>
 nnoremap <C-h> :bp<CR>
 "nnoremap bd :bd<CR>
 " 解决通过:bd关闭当前buffer时,ErrorWindow没有关闭的问题
-nnoremap <silent> <C-d> :lclose<CR>:bdelete<CR>
+nnoremap <silent> <C-x> :lclose<CR>:bdelete<CR>
 cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
 
 if !exists('g:airline_symbols')
