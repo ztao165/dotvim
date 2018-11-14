@@ -27,6 +27,9 @@ nnoremap <F3> :exe 'NERDTreeToggle'<CR>
 nnoremap <C-l> :bn<CR>
 nnoremap <C-h> :bp<CR>
 "nnoremap bd :bd<CR>
+" 解决通过:bd关闭当前buffer时,ErrorWindow没有关闭的问题
+nnoremap <silent> <C-d> :lclose<CR>:bdelete<CR>
+cabbrev <silent> bd <C-r>=(getcmdtype()==#':' && getcmdpos()==1 ? 'lclose\|bdelete' : 'bd')<CR>
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
@@ -73,8 +76,21 @@ let g:airline#extensions#whitespace#symbol = '!'
     set statusline+=%#warningmsg#
     set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
+    let g:syntastic_php_checkers = ['php', 'phpcs']
+    "let g:syntastic_php_phpcs_args = "--standard=phpcs_ruleset.xml"
     let g:syntastic_always_populate_loc_list = 1
     let g:syntastic_auto_loc_list = 1
     let g:syntastic_check_on_open = 1
     let g:syntastic_check_on_wq = 0
+    let g:syntastic_aggregate_errors = 1    " 多个检查器的错误在一个窗口显示
+
+    " 在文件所在的目录查找phpcs的规则文件，如果没有找到则在上层目录找，依次递归直至找到符合的文件
+    function! FindConfig(prefix, what, where)
+        let cfg = findfile(a:what, escape(a:where, ' ') . ';')
+        return cfg !=# '' ? ' ' . a:prefix . '=' . shellescape(cfg) : ''
+    endfunction
+
+    autocmd FileType php let b:syntastic_php_phpcs_args =
+        \ get(g:, 'syntastic_php_phpcs_args', '') .
+        \ FindConfig('--standard', 'phpcs_ruleset.xml', expand('<afile>:p:h', 1))
 "}
