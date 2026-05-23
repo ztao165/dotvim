@@ -1,7 +1,7 @@
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 " nerdtree
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 " php autocomplete
 Plugin 'shawncplus/phpcomplete.vim'
 " CTRLP
@@ -17,8 +17,7 @@ Plugin 'tpope/vim-fugitive'
 " syntastic
 " Plugin 'vim-syntastic/syntastic'
 " taglist
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'majutsushi/tagbar'
+Plugin 'preservim/tagbar'
 " Go language support
 Plugin 'fatih/vim-go'
 " TypeScript language support
