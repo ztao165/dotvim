@@ -10,14 +10,16 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 " line status themes
 Plugin 'vim-airline/vim-airline-themes'
-" markdown preview
-Plugin 'suan/vim-instant-markdown'
 " delete buffer better
 Plugin 'moll/vim-bbye'
 " git wrapper
 Plugin 'tpope/vim-fugitive'
 " syntastic
-Plugin 'vim-syntastic/syntastic'
+" Plugin 'vim-syntastic/syntastic'
 " taglist
 Plugin 'vim-scripts/taglist.vim'
 Plugin 'majutsushi/tagbar'
+" Go language support
+Plugin 'fatih/vim-go'
+" TypeScript language support
+Plugin 'leafgarland/typescript-vim'
