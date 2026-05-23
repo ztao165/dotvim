@@ -21,7 +21,12 @@ set backspace=2             " 将delete键设置为增强模式，等于backspac
 set t_Co=256                " Explicitly tell Vim that the terminal supports 256 colors
 set ambiwidth=double        " When iTerm set double-width characters, set it
 
-nnoremap <F3> :exe 'NERDTreeToggle'<CR>
+let mapleader="\<space>"
+
+nnoremap <leader>p "0p
+
+nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <F5> :NERDTreeToggle<CR>
 "nnoremap <C-l> gt
 "nnoremap <C-h> gT
 nnoremap <C-l> :bn<CR>
@@ -61,7 +66,7 @@ let g:airline#extensions#whitespace#symbol = '!'
     let Tlist_Use_Right_Window = 1              " 在右侧窗口中显示taglist
     let Tlist_GainFocus_On_ToggleOpen = 1       " 打开taglist时，光标保留在taglist窗口
     let Tlist_Ctags_Cmd='/usr/local/bin/ctags'  " 设置ctags命令的位置
-    nnoremap <F4> :Tlist<CR>                    " 设置关闭和打开taglist窗口的快捷键
+    "nnoremap <F4> :Tlist<CR>                    " 设置关闭和打开taglist窗口的快捷键
 "}
 
 "tagbar{
@@ -69,7 +74,7 @@ let g:airline#extensions#whitespace#symbol = '!'
     let g:tagbar_width = 30
     let g:tagbar_autofocus = 0
     let tagbar_ctags_bin = '/usr/local/bin/ctags'
-    nnoremap <F5> :TagbarToggle<CR>
+    nnoremap <F4> :TagbarToggle<CR>
 "}
 
 "syntastic{
